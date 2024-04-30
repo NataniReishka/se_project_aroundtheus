@@ -1,7 +1,6 @@
 # Project 3: Around The U.S.
 
 
-
 ## Project features
 
 - Semantic HTML5
@@ -33,7 +32,7 @@ The way you'll do this at work is by exporting images directly from Figma — we
 
 ## Link to GitPages
 
-
+[GitPages]()
 
 ## Video Link
 
@@ -41,4 +40,4 @@ In the [video]() I explain some of what I had during this project and how it wor
 
 ## Plans on improving the project
 1. Applying media queries for better formatting on tablets
-2. 
+2. Improve the quality of understanding and explanation in the video
