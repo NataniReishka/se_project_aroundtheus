@@ -32,7 +32,7 @@ The way you'll do this at work is by exporting images directly from Figma — we
 
 ## Link to GitPages
 
-[GitPages]()
+[GitPages](https://natanireishka.github.io/se_project_aroundtheus/)
 
 ## Video Link
 
