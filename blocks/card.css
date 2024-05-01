@@ -19,7 +19,7 @@
   color: #000;
 }
 
-.card__description_title {
+.card__title {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
