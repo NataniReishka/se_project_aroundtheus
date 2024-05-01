@@ -1,26 +1,26 @@
-.cards{
-    margin-top: 51px;
-    font-weight: 900;
-    line-height: 1.2;
+.cards {
+  margin-top: 51px;
+  font-weight: 900;
+  line-height: 1.2;
 }
 
-.cards__list{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 282px);
-    list-style-type: none;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-    gap: 20px 17px;
+.cards__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 282px);
+  list-style-type: none;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  gap: 20px 17px;
 }
 
 @media screen and (max-width: 320px) {
-    .cards{
-        margin-top: 36px;
-        min-width: 282px;
-    }
+  .cards {
+    margin-top: 36px;
+    min-width: 282px;
+  }
 
-    .cards__list{
-        width: 100%;
-    }
+  .cards__list {
+    width: 100%;
+  }
 }

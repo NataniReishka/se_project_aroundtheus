@@ -1,27 +1,26 @@
 .page {
-    font-family: 'Inter', Arial, sans-serif;
-    background: #000;
-    color: #fff;
-    margin: 0 auto;
-    padding: 45px 19px 60px;
-    max-width: 880px;
+  font-family: "Inter", Arial, sans-serif;
+  background: #000;
+  color: #fff;
+  margin: 0 auto;
+  padding: 45px 19px 60px;
+  max-width: 880px;
 }
 
-.page__section{
-    width: 100%;
-    position: relative;
-    margin: 0 auto;
+.page__section {
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
 }
 
-.page__content{
-    display:flex;
-    flex-direction: column;
-    min-height: 100vh;
+.page__content {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 @media screen and (max-width: 320px) {
-    .page {
-        padding: 0;
-    }
-    
+  .page {
+    padding: 0;
+  }
 }

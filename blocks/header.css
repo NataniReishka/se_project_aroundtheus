@@ -1,21 +1,21 @@
-.header{
-    border-bottom: solid 1px rgba(84, 84, 84, .7);
+.header {
+  border-bottom: solid 1px rgba(84, 84, 84, 0.7);
 }
 
-.header__logo{
-    margin-bottom: 40px;
+.header__logo {
+  margin-bottom: 40px;
 }
 
 @media screen and (max-width: 320px) {
-    .header{
-        margin-top: 28px;
-        width: 100%;
-    }
-    
-    .header__logo{
-        max-width: 126px;
-        max-height: 24px;
-        margin-bottom: 32px;
-        margin-left: 24px;
-    }
+  .header {
+    margin-top: 28px;
+    width: 100%;
+  }
+
+  .header__logo {
+    max-width: 126px;
+    max-height: 24px;
+    margin-bottom: 32px;
+    margin-left: 24px;
+  }
 }
