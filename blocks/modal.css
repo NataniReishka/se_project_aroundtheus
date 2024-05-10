@@ -1,5 +1,5 @@
 .modal {
-  display: flex;
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -112,12 +112,14 @@
     max-width: 282px;
     max-height: 322px;
   }
+
   .modal__heading {
     margin-top: 25px;
     font-size: 18px;
     line-height: 22px;
     font-weight: 900;
   }
+
   .modal__close-button {
     width: 26px;
     height: 26px;
