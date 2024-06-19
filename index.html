@@ -68,17 +68,32 @@
             class="modal__input"
             id="profile-title-input"
             placeholder="Name"
+            minlength="2"
+            maxlength="40"
             required
           />
+          <span class="modal__error" id="profile-title-input-error"></span>
           <input
             type="text"
             name="description"
             class="modal__input"
             id="profile-description-input"
             placeholder="Description"
+            minlength="2"
+            maxlength="200"
             required
           />
-          <button type="submit" class="modal__save-button">Save</button>
+          <span
+            class="modal__error"
+            id="profile-description-input-error"
+          ></span>
+          <button
+            type="submit"
+            class="modal__save-button modal__save-button_disabled"
+            disabled
+          >
+            Save
+          </button>
         </form>
       </div>
     </div>
@@ -99,17 +114,27 @@
             class="modal__input"
             id="new-place-input"
             placeholder="Title"
+            minlength="1"
+            maxlength="30"
             required
           />
+          <span class="modal__error" id="new-place-input-error"></span>
           <input
-            type="text"
+            type="url"
             name="url"
             class="modal__input"
             id="image-url-input"
             placeholder="Image URL"
             required
           />
-          <button type="submit" class="modal__save-button">Save</button>
+          <span class="modal__error" id="image-url-input-error"></span>
+          <button
+            type="submit"
+            class="modal__save-button modal__save-button_disabled"
+            disabled
+          >
+            Save
+          </button>
         </form>
       </div>
     </div>
@@ -127,6 +152,7 @@
       </div>
     </div>
 
+    <!-- card template -->
     <template id="card-template">
       <li class="card">
         <img src="" alt="" class="card__image" />
@@ -138,6 +164,8 @@
       </li>
     </template>
 
+    <!-- index.js -->
     <script src="./scripts/index.js" defer></script>
+    <script src="./scripts/validation.js" defer></script>
   </body>
 </html>
