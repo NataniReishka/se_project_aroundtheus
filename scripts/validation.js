@@ -40,7 +40,7 @@ function toggleButtonState(inputEl, submitButton, { inactiveButtonClass }) {
 function setEventListeners(formEl, config) {
   const { inputSelector } = config;
   const inputEls = Array.from(formEl.querySelectorAll(inputSelector));
-  const submitButton = formEl.querySelector(".modal__save-button");
+  const submitButton = formEl.querySelector(config.submitButtonSelector);
 
   inputEls.forEach((inputEl) => {
     inputEl.addEventListener("input", (evt) => {
@@ -50,7 +50,7 @@ function setEventListeners(formEl, config) {
   });
 }
 
-function enableValidation(options) {
+function enableValidation(config) {
   const formEls = Array.from(document.querySelectorAll(config.formSelector));
   formEls.forEach((formEl) => {
     formEl.addEventListener("submit", (evt) => {
