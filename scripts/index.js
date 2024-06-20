@@ -120,6 +120,8 @@ function handleAddCardFormSubmit(evt) {
   const link = cardUrlInput.value;
   renderCard({ name, link }, cardListEl);
   closePopup(addCardModal);
+  cardTitleInput.value = "";
+  cardUrlInput.value = "";
 }
 
 function renderCard(cardData) {
@@ -127,14 +129,12 @@ function renderCard(cardData) {
   cardListEl.prepend(cardElement);
 }
 
-function handleOverlay(modal) {
-  const modals = document.querySelectorAll(".modal");
-  modals.forEach((modal) => {
-    modal.addEventListener("mousedown", (evt) => {
-      if (evt.target === modal) closePopup(modal);
-    });
+const modals = document.querySelectorAll(".modal");
+modals.forEach((modal) => {
+  modal.addEventListener("mousedown", (evt) => {
+    if (evt.target === modal) closePopup(modal);
   });
-}
+});
 
 //Event Listeners
 profileEditForm.addEventListener("submit", handleProfileEditSubmit);
