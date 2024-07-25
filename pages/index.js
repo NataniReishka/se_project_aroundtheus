@@ -96,11 +96,16 @@ function handleAddCardFormSubmit(evt) {
   closePopup(addCardModal);
   cardTitleInput.value = "";
   cardUrlInput.value = "";
+  addCardFormValidator.disableSubmitButton();
+}
+
+function createCard(cardData) {
+  const card = new Card(cardData, "#card-template", handleImageClick);
+  return card.getCard();
 }
 
 function renderCard(cardData) {
-  const card = new Card(cardData, "#card-template", handleImageClick);
-  const cardElement = card.getCard();
+  const cardElement = createCard(cardData);
   cardListEl.prepend(cardElement);
 }
 
@@ -128,10 +133,16 @@ const config = {
 };
 
 const forms = document.querySelectorAll(config.formSelector);
-forms.forEach((formEl) => {
-  const formValidator = new FormValidator(config, formEl);
-  formValidator.enableValidation();
-});
+
+const addCardFormValidator = new FormValidator(config, addCardFormElement);
+addCardFormValidator.enableValidation();
+
+const editProfileValidator = new FormValidator(config, profileEditForm);
+editProfileValidator.enableValidation();
+// forms.forEach((formEl) => {
+//   const formValidator = new FormValidator(config, formEl);
+//   formValidator.enableValidation();
+// });
 
 //Event Listeners
 profileEditForm.addEventListener("submit", handleProfileEditSubmit);

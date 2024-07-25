@@ -38,8 +38,7 @@ export default class FormValidator {
 
   _toggleButtonState() {
     if (!this._hasValidInput()) {
-      this._submitButton.classList.add(this._config.inactiveButtonClass);
-      this._submitButton.disabled = true;
+      this.disableSubmitButton();
     } else {
       this._submitButton.classList.remove(this._config.inactiveButtonClass);
       this._submitButton.disabled = false;
@@ -53,6 +52,11 @@ export default class FormValidator {
         this._toggleButtonState();
       });
     });
+  }
+
+  disableSubmitButton() {
+    this._submitButton.classList.add(this._config.inactiveButtonClass);
+    this._submitButton.disabled = true;
   }
 
   enableValidation() {
